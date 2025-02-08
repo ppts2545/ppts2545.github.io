@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column; /* Stack the header and items-container vertically */
+        height: auto;
+        margin: 5% 20%;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .header h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .header > div {
+        opacity: 0.3;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .items-container {
+        display: flex;
+        flex-direction: column;  /* Stack the items vertically in the container */
+      }
+
+      .item {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;   /* Keep individual items in a row (image + text) */
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3rem;
+      }
+      .item-header {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 2rem
+        
+      }
+      img {
+        border-radius: 10px;
+      }
+      
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h2>We release interesting articles about technology</h2>
+          <div>//////////////////////////////</div>
+        </div>
+        <div class="items-container">
+          <div class="item">
+            <img src="./resources/photo_1.png" alt="Responsive Image">
+            <div class="text">
+              <div class="item-header">Unlocking the Power of Cloud Computing A Guide to Scalable Solutions</div>
+              <div class="item-date">November12, 2024</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./resources/photo_2.png" alt="Responsive Image">
+            <div class="text">
+              <div class="item-header">The Future of AI How Machine Learning is Revolutionizing Industries</div>        
+              <div class="item-date">November12, 2024</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./resources/photo_3.png" alt="Responsive Image">
+            <div class="text">
+              <div class="item-header">The Impact of 5G on Business:How Faster Networks are Transforming the Way We Work</div>
+              <div class="item-date">November12, 2024</div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+</body>
+</html>
